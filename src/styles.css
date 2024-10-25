@@ -1,0 +1,355 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+  }
+ 
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align items top and bottom */
+    padding: 20px;
+    background-color: #e3f2fd;
+    height: 100vh; /* Full height */
+  }
+ 
+  .data-section {
+    display: flex;
+    justify-content: space-around; /* Align data boxes in a row */
+    margin-bottom: 20px;
+    height: auto;
+  }
+ 
+  .data-box {
+    background-color: #bbdefb;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+ 
+  .data-box h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+ 
+  .data-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+ 
+  .data-box:hover {
+    background-color: #90caf9; /* Change color on hover */
+  }
+ 
+  .status-section {
+    display: block;
+    justify-content: left; /* Center the weather status */
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    width: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+ 
+  @media (max-width: 768px) {
+    .dashboard-container {
+      height: auto; /* Allow the height to adjust based on content */
+    }
+ 
+    .data-section {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .history-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #90caf9; /* Table header background color */
+    color: #fff; /* Header text color */
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternating row background color */
+  }
+  
+  tbody tr:hover {
+    background-color: #e3f2fd; /* Highlight row on hover */
+  }
+  
+  td {
+    color: #333;
+  }
+  
+  td:first-child {
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    table {
+      font-size: 14px; /* Adjust table font size for smaller screens */
+    }
+  
+    th, td {
+      padding: 10px;
+    }
+  }
+  
+ /* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: center; /* Center the nav items */
+    align-items: center;
+    background-color: #6ea9d8; /* Navbar background color */
+    padding: 15px 20px; /* Adjust padding to match old styles */
+    height: 10vh; /* Maintain height from old styles */
+    width: 92.5vw; /* Full width */
+    font-family: 'Arial', sans-serif; /* Consistent font */
+    gap: 50px; /* Space between logo and nav items */
+}
+
+/* Unordered list inside the nav */
+nav h3 {
+    color :#f0f0f0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+h1{
+  color:#319af0;
+}
+/* Each list item in the nav */
+nav ul li {
+    margin: 0 15px; /* Margin adjusted to align with old styles */
+    display: inline; /* Keep items inline */
+}
+
+/* Style for the links inside the nav */
+nav ul li a {
+    color: white; /* Consistent text color */
+    text-decoration: none;
+    font-size: 1rem; /* Match font size with old styles */
+    padding: 8px 16px; /* Padding adjusted for a better look */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s ease; /* Transition effects */
+}
+
+/* Change background on hover */
+nav ul li a:hover {
+    background-color: #90caf9; /* Darker background on hover */
+    color: #f0f0f0; /* Light text color on hover */
+}
+
+/* Active link style */
+nav ul li a.active {
+    background-color:#90caf9; /* Active link color */
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack the list items */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Space between list items */
+    }
+}
+
+
+/* Ensure the body takes the full height of the page */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the About Us container */
+  .about-container {
+    display: flex; /* Use flexbox to position items */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center vertically */
+    height: 75vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    background-color: #f0f8ff; /* Light background color */
+    padding: 20px; /* Padding around the container */
+  }
+  
+  /* Left text container styling */
+  .about-text {
+    width: 50%; /* Takes half of the available space */
+    padding-right: 20px; /* Adds space between text and image */
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    color: #333; /* Dark color for text */
+  }
+  
+  .about-text p {
+    font-size: 1.2rem;
+    color: #555; /* Medium color for paragraph text */
+    line-height: 1.6; /* Spacing between lines */
+  }
+  
+  /* Right image container styling */
+  .about-image {
+    width: 50%; /* Takes half of the available space */
+    text-align: center; /* Center the image */
+  }
+  
+  .about-image img {
+    max-width: 500px; /* Ensures image fits within its container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: adds rounded corners */
+  }
+  
+  /* src/styles.css */
+.login {
+    max-width: 300px;
+    max-height: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+  
+  .login h1 {
+    text-align: center;
+  }
+  
+  .login form div {
+    margin-bottom: 15px;
+  }
+  
+  .login form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .login form input {
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+  }
+  
+  .login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #90caf9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login button:hover {
+    background-color: #52a3e5;
+  }
+  
+/* General page styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff; /* Light blue background */
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #95c7f9; /* Dodger blue for the heading */
+  margin-bottom: 20px;
+}
+
+/* Latest sensor data styles */
+div > p {
+  color:  #6ea9d8; /* Royal blue for the latest data text */
+  font-size: 18px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+/* Chart container styles */
+.chart-container {
+  margin: 0 auto;
+  width: 80%;
+  background-color: #e6f2ff; /* Light blue chart container background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 255, 0.1);
+  padding: 20px;
+  max-width: 900px;
+}
+
+/* Chart title styles */
+.chart-container h2 {
+  text-align: center;
+  color: #5fa5df; /* Steel blue for the chart title */
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Line chart styles */
+.chart-container canvas {
+  background-color: #add8e6; /* Lighter blue canvas background */
+  border-radius: 8px;
+}
+
+/* Loading text styles */
+p.loading {
+  color: #52a3e5; /* Cornflower blue for loading text */
+  font-size: 16px;
+  text-align: center;
+  margin: 20px 0;
+}
+
